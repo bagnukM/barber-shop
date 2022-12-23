@@ -1,0 +1,78 @@
+
+.navigation_list-link, 
+.header_tel {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.1em;
+
+    /* color: #FFFFFF; */
+}
+
+.navigation_list-link:hover,
+.navigation_list-link:focus,
+.header_tel:hover,
+.header_tel:focus {
+    color: #FF6C00;
+}
+
+
+
+.address{
+    font-style: normal;
+}
+.modal-btn{
+    
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    /* color: #FFFFFF; */
+}
+
+.social-links_link{
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+
+    color: #303030;
+}
+.social-links_link:hover,
+.social-links_link:focus{
+    color: #FF6C00;
+}
+.undertitle{
+        font-family: 'Open Sans', sans-serif;        
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.364;    
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    
+        color: rgba(157, 164, 189, 0.6);
+}
+.hero_tile
+{
+        font-family: 'Raleway', sans-serif;       
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1.181;    
+        letter-spacing: 0.05em;
+    
+        /* color: #FFFFFF; */
+}
+.description{
+        font-family: 'Open Sans', sans-serif;        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.667;    
+        letter-spacing: 0.02em;
+    
+        color: #9DA4BD;
+}
