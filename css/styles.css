@@ -1,4 +1,42 @@
 
+:root {--accent-color: #FF6C00;} 
+
+/*==============HEADER==============*/
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+} 
+
+.header .logo{
+    margin-right: 70px;
+}
+
+.header .address{
+    margin-left: auto;
+}
+
+.header .header_tel{
+    margin-right: 40px;
+}
+
+.navigation_list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.navigation_list{
+    display: flex;
+}
+
 .navigation_list-link, 
 .header_tel {
     font-family: 'Open Sans', sans-serif;
@@ -14,49 +52,170 @@
 .navigation_list-link:focus,
 .header_tel:hover,
 .header_tel:focus {
-    color: #FF6C00;
+    color: var(--accent-color)
 }
-
-
-
-.address{
+.address {
     font-style: normal;
 }
-.modal-btn{
-    
-    font-family: 'Open Sans', sans-serif;   
+/*==============END HEADER==============*/
+
+/* ===============COMONENTS=============== */
+.modal-btn {
+        min-width: 160px;
+        border: 1px solid #FF6C00;
+        border-radius: 25px;
+
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-
+    background-color: transparent;
+    cursor: pointer;
+    padding: 12px 20px;
     /* color: #FFFFFF; */
 }
 
-.social-links_link{
-    font-family: 'Open Sans', sans-serif;   
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links_item:not(:last-child){
+    margin-right: 40px;
+}
+
+.social-links_link {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.364;
     letter-spacing: 0.2em;
-
     color: #303030;
 }
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .social-links_link:hover,
-.social-links_link:focus{
-    color: #FF6C00;
+.social-links_link:focus {
+    color: var(--accent-color)
 }
-.undertitle{
-        font-family: 'Open Sans', sans-serif;        
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 1.364;    
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
+.undertitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.undertitle__light-theme{color: #303030;
+}
+
+.undertitle__dark-theme{
+    color: rgba(157, 164, 189, 0.6)
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em; 
+}
+
+.hero .description
+{
+    width: 400px;
+}
+.description__light-theme {
+    color: #555555;
+}
+
+.description__dark-theme {
+    color: #9DA4BD;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    color: #303030;}
+
+        .title__light-theme {
+            color: #303030;
+        }
     
-        color: rgba(157, 164, 189, 0.6);
+        .title__dark-theme {
+            /* color: #FFFFFF; */
+        }
+
+.list{
+    list-style: none;
 }
+
+.link{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+img{
+    display: block;
+}
+
+.section{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+/* ===============END COMONENTS=============== */
+
+/*==============HERO==============*/
+
+.hero .container{
+    display: flex;
+}
+
+.hero_left-side{
+    width: 100px;
+
+}
+
+.hero_right-side{
+    flex-grow: 1;
+    padding-left: 100px;
+    padding-top: 272px;
+    padding-bottom: 206px;
+}
+
 .hero_tile
 {
         font-family: 'Raleway', sans-serif;       
@@ -64,15 +223,238 @@
         font-size: 72px;
         line-height: 1.181;    
         letter-spacing: 0.05em;
-    
+        margin-bottom: 20px;
         /* color: #FFFFFF; */
 }
-.description{
-        font-family: 'Open Sans', sans-serif;        
+
+/*==============END HERO==============*/
+
+/*==============ABOUT==============*/
+.about .container{
+    display: flex;
+}
+
+.about .title{
+    margin-bottom: 20px;
+}
+
+.about .description{
+    margin-bottom: 20px;
+}
+
+.about__list{
+    display: flex;
+}
+
+.about__right-side{
+    padding-left: 64px;
+}
+
+.about__list-items:not(:last-child){
+    margin-right: 30px;
+}
+
+.about__text{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.857;
+        letter-spacing: 0.02em; 
+        margin-bottom: 40px;
+        color: #555555;
+}
+/*==============END ABOUT==============*/
+
+/*==============SERVICES==============*/
+.services__list-item-name, 
+.services__list-item-price {
+        font-family: 'Open Sans';
         font-weight: 400;
         font-size: 18px;
-        line-height: 1.667;    
-        letter-spacing: 0.02em;
-    
+        line-height: 1.667;
+        letter-spacing: 0.02em;   
         color: #9DA4BD;
 }
+
+.services .title{
+    margin-bottom: 44px;
+}
+
+.services__list-wrapper{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.services__list{
+    width: 50%;
+    padding: 30px 40px;
+    border: 1px solid;
+}
+
+.services__list-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__list-item:not(:last-child){
+    margin-bottom: 20px;
+}
+ 
+.services .modal-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+/*==============END SERVICES==============*/
+
+/*==============ACHIVMENTS==============*/
+.achivments .container{
+    display: flex;
+}
+
+.achivments__left-side{
+    width: 470px;
+    flex-shrink: 0;
+    padding-left: 100px;
+}
+
+.achivments__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.achivments__list-item{
+    width: 170px;
+    border: 1px solid;
+    min-height: 133px;
+    padding: 20px;
+}
+
+.achivments__list-item:not(:nth-child(even)){
+    margin-right: 30px;
+}
+
+.achivments__list-item:nth-child(even){
+    margin-top: 30px;
+}
+
+.achivments__list-item-counter{
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.357;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #303030;
+        margin-bottom: 6px;
+}
+
+.achivments__list-item-desc{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.363;
+        text-align: center;
+        color: #303030;
+}
+
+.achivments__right-side{
+    padding-left: 130px;
+}
+
+.achivments .title{
+    margin-bottom: 20px;
+}
+
+.achivments .description{
+    padding-right: 106px;
+}
+
+/*==============END ACHIVMENTS==============*/
+
+/*==============MASTERS==============*/
+
+.masters .title{
+    margin-bottom: 24px;
+}
+
+.masters__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.masters__list-name{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.389;    
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        color: #303030;
+}
+
+.masters__list-content-wrapper{
+    padding-top: 30px;
+    padding-left: 82px;
+    padding-right: 82px;
+}
+
+.masters__list-position{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+/*==============END MASTERS==============*/
+
+/*==============GALLERY==============*/
+.gallery .undertitle{
+    margin-bottom: 44px;
+}
+
+.gallery__list{
+    display: flex;
+    justify-content: space-between;
+}
+/*==============END GALLERY==============*/
+
+
+/*==============CONTACT==============*/
+.contact__list-link, 
+.contact-information__date{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.667;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+}
+
+.copyright{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+        color: #9DA4BD;
+}
+
+/*==============END CONTACT==============*/
+
+/*==============FOOTER==============*/
+.footer{
+    padding: 56px 0;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*==============END FOOTER==============*/
